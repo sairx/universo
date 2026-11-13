@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Usted, Davi, es todo mi universo</title>
+<style>
+:root{--gold:#ffd98a;--pink:#ff7eb6;--vio:#b69cff;--ink:#f6f0ff;--bg:#05030f;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;overflow:hidden;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+body{background:radial-gradient(ellipse at 50% 30%,#1a0f3d 0%,#0a0620 50%,#02010a 100%)}
+.neb{position:fixed;border-radius:50%;filter:blur(55px);opacity:.45;pointer-events:none;animation:nb 30s ease-in-out infinite alternate}
+.n1{width:90vmax;height:60vmax;left:-30vmax;top:-10vmax;background:radial-gradient(#6a2fd0,transparent 65%)}
+.n2{width:80vmax;height:50vmax;right:-30vmax;top:30vh;background:radial-gradient(#d6428f,transparent 65%);animation-delay:-9s;opacity:.3}
+.n3{width:70vmax;height:60vmax;left:-10vmax;bottom:-25vmax;background:radial-gradient(#2a5fe0,transparent 65%);animation-delay:-17s}
+@keyframes nb{to{transform:translate(8vmax,-5vmax) scale(1.2) rotate(20deg)}}
+.pl{position:fixed;border-radius:50%;pointer-events:none;opacity:.8;animation:dr 40s linear infinite alternate}
+.p1{width:46px;height:46px;left:8%;top:18%;background:radial-gradient(circle at 30% 30%,#ffc0e0,#c0408a 60%,#3a0a30);box-shadow:0 0 22px #ff7eb655}
+.p2{width:30px;height:30px;right:10%;top:62%;background:radial-gradient(circle at 30% 30%,#b8d4ff,#3a64c8 60%,#0a1440);animation-duration:55s;box-shadow:0 0 18px #6fa8ff55}
+.p3{width:64px;height:64px;right:-14px;top:12%;background:radial-gradient(circle at 30% 30%,#e0d0ff,#7a50d0 60%,#1a0a40);animation-duration:70s;box-shadow:0 0 26px #b69cff55}
+@keyframes dr{to{transform:translate(-30vw,14vh) rotate(60deg)}}
+#c{position:fixed;inset:0;width:100%;height:100%}
+#hl{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.hf{position:absolute;bottom:-40px;filter:drop-shadow(0 0 8px #ff7eb6);opacity:0;animation:fl 8s linear forwards}
+@keyframes fl{10%{opacity:.9}90%{opacity:.7}100%{transform:translate(25px,-110vh) rotate(25deg);opacity:0}}
+.sc{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(24px + env(safe-area-inset-top,0px)) 22px calc(28px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:opacity 1.2s}
+.sc.on{opacity:1;pointer-events:auto}
+h1,h2{margin:0;font-weight:400;line-height:1.25}
+.msg{font-size:clamp(1.35rem,6vw,2.1rem);font-style:italic;max-width:560px;text-shadow:0 0 18px #b69cff99;opacity:0}
+.sc.on .msg{animation:fi 2.4s 3.4s forwards}
+@keyframes fi{to{opacity:1}}
+.b{margin-top:34px;min-height:58px;padding:16px 34px;border:1px solid #ffd98a99;border-radius:40px;background:linear-gradient(135deg,#6a2fd099,#d6428f99);color:#fff;font:inherit;font-size:1.15rem;letter-spacing:.03em;cursor:pointer;box-shadow:0 0 26px #ff7eb677,inset 0 0 14px #ffffff22;animation:pu 2.4s ease-in-out infinite;opacity:0;visibility:hidden;transition:opacity 1.2s}
+.b.show{opacity:1;visibility:visible}
+.sc.on .b.d{animation:pu 2.4s ease-in-out infinite,fi 1.4s 5.2s forwards;visibility:visible}
+.b:active{transform:scale(.96)}
+@keyframes pu{50%{box-shadow:0 0 44px #ffd98aaa,inset 0 0 18px #ffffff33}}
+#s2{justify-content:flex-end}
+.ti{font-size:clamp(1.25rem,5.8vw,2.2rem);letter-spacing:.06em;line-height:1.5;opacity:0;transition:opacity 2s;text-shadow:0 0 16px #b69cffaa;margin-bottom:6px}
+.ti.show{opacity:1}
+.dv{font-weight:700;font-size:1.25em;background:linear-gradient(90deg,#fff,#ffd98a,#ff9ccf,#ffd98a,#fff);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 4s linear infinite;filter:drop-shadow(0 0 10px #ffd98a)}
+@keyframes sh{to{background-position:-250% 0}}
+#s3{justify-content:center}
+.pn{width:100%;max-width:560px;max-height:calc(100% - 110px);overflow-y:auto;padding:22px 20px;border-radius:22px;background:#0b0624aa;border:1px solid #b69cff55;box-shadow:0 0 40px #6a2fd044;backdrop-filter:blur(4px);text-align:left;font-size:clamp(1.02rem,4.2vw,1.25rem);line-height:1.65;white-space:pre-wrap;-webkit-overflow-scrolling:touch}
+.cur{display:inline-block;width:2px;height:1.1em;background:var(--gold);vertical-align:-3px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+#s4{justify-content:flex-end}
+#s4 .msg{font-size:clamp(1.3rem,5.6vw,2rem);transition:opacity 2s;animation:none!important;margin-bottom:10px}
+#s4 .msg.show{opacity:1}
+#s5 p{margin:0 0 18px;max-width:540px;font-size:clamp(1.12rem,4.8vw,1.6rem);font-style:italic;line-height:1.5;opacity:0;text-shadow:0 0 16px #b69cff99}
+#s5.on p{animation:fi 2.4s forwards}
+#s5.on p:nth-child(1){animation-delay:1.5s}#s5.on p:nth-child(2){animation-delay:5s}
+#s5 .fin{font-style:normal;font-weight:700;letter-spacing:.08em;font-size:clamp(1.6rem,8vw,2.6rem);color:var(--gold);text-shadow:0 0 22px #ffd98a,0 0 50px #ff7eb6}
+#s5.on .fin{animation:fi 2.6s 8.5s forwards,hb 2s 11s ease-in-out infinite}
+@keyframes hb{50%{transform:scale(1.06)}}
+#fl{position:fixed;inset:0;background:#fff;opacity:0;pointer-events:none;transition:opacity .9s}
+@media(prefers-reduced-motion:reduce){.neb,.pl{animation:none}}
+</style>
+</head>
+<body>
+<div class="neb n1"></div><div class="neb n2"></div><div class="neb n3"></div>
+<div class="pl p1"></div><div class="pl p2"></div><div class="pl p3"></div>
+<canvas id="c"></canvas>
+<div id="hl"></div>
+
+<section class="sc on" id="s0">
+<h1 class="msg">Hay millones de estrellas en el universo, pero ninguna brilla para mí como usted, Davi.</h1>
+<button class="b d" id="b0">Entre a mi universo ❤️</button>
+</section>
+
+<section class="sc" id="s2">
+<h2 class="ti" id="ti">USTED, <span class="dv">DAVI</span>,<br>ES TODO MI UNIVERSO</h2>
+<button class="b" id="b2">Continuar ✨</button>
+</section>
+
+<section class="sc" id="s3">
+<div class="pn" id="pn"></div>
+<button class="b" id="b3">Continuar ✨</button>
+</section>
+
+<section class="sc" id="s4">
+<h2 class="msg" id="m4">Así de inmenso es lo que siento por usted, Davi ❤️</h2>
+<button class="b show" id="b4a">Toque las estrellas ✨</button>
+<button class="b" id="b4b" style="margin-top:14px">Continuar ❤️</button>
+</section>
+
+<section class="sc" id="s5">
+<p>Entre infinitos universos, millones de estrellas y miles de galaxias, mi lugar favorito siempre será donde esté usted.</p>
+<p>Gracias por iluminar mi vida de una manera tan bonita.</p>
+<p class="fin">TE QUIERO, DAVI. ❤️</p>
+</section>
+<div id="fl"></div>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var cv=$('c'),cx=cv.getContext('2d'),W,H,maxR,D;
+var sc=0,tS=performance.now(),warp=0,warpT=0,ga=0.08,gaT=0.08,gs=1,gsT=1,rot=0,bright=0,brT=0,sunA=0,formA=0,formT=0;
+var stars=[],gal=[],form=[],sparks=[],cols=['255,255,255','255,226,160','200,180,255','255,170,210'];
+var L="Davi, ¿sabe algo? A veces miro el cielo y pienso en lo inmenso que es el universo, en todas las estrellas que existen y en lo pequeño que parece nuestro mundo frente a tanta inmensidad.\n\nPero entonces pienso en usted y entiendo que no necesito buscar millones de galaxias para encontrar algo extraordinario, porque tengo la fortuna de tenerle en mi vida.\n\nUsted es esa luz que ilumina mis días incluso cuando todo parece oscuro, esa sonrisa que puede cambiar mi mundo y esa persona que hace que cada momento tenga un significado especial.\n\nSi mi vida fuera un universo, usted sería mi estrella más brillante, mi sol en los días grises y mi galaxia favorita.\n\nNo importa cuántas estrellas existan, cuántos planetas haya ni qué tan infinito sea el espacio. Si pudiera elegir dónde estar, siempre elegiría un lugar donde pueda compartir mi vida con usted.\n\nPorque, Davi, usted no es solamente una parte de mi universo... usted es todo mi universo. ❤️";
+
+function rs(){D=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0);maxR=Math.hypot(W,H)/2}
+rs();addEventListener('resize',function(){rs();if(sc===2)setT(txtPts());if(sc===4)setT(heartPts())});
+
+var NS=Math.min(480,Math.round(W*H/1800));
+for(var i=0;i<NS;i++)stars.push({a:Math.random()*6.283,f:Math.random(),r:.5+Math.random()*1.4,ph:Math.random()*6.3,sp:.0008+Math.random()*.003,on:Math.random()*3200,c:cols[Math.random()<.7?0:1+(Math.random()*3|0)],z:.4+Math.random()});
+var buckets=['255,214,150','210,150,255','120,160,255'];
+for(i=0;i<750;i++){var r=Math.pow(Math.random(),.7);gal.push({r:r,a:(i%3)*2.094+r*5+(Math.random()-.5)*.55,j:(Math.random()-.5)*.05,b:r<.25?0:r<.6?1:2})}
+for(i=0;i<420;i++)form.push({x:Math.random()*W,y:Math.random()*H,tx:W/2,ty:H/2,s:.8+Math.random()*1.6,ph:Math.random()*6.3});
+
+function txtPts(){var o=document.createElement('canvas');o.width=240;o.height=80;var g=o.getContext('2d');g.fillStyle='#fff';g.font='bold 74px Georgia,serif';g.textAlign='center';g.textBaseline='middle';g.fillText('DAVI',120,42);
+var d=g.getImageData(0,0,240,80).data,p=[],k=Math.min(W*.82,420)/240,ox=W/2-120*k,oy=Math.max(H*.13,70)-40*k;
+for(var y=0;y<80;y+=3)for(var x=0;x<240;x+=3)if(d[(y*240+x)*4+3]>128)p.push([ox+x*k,oy+y*k]);return p}
+function heartPts(){var p=[],s=Math.min(W,H*.8)/38,cx0=W/2,cy0=H*.4;[[1,200],[.68,130],[.36,70]].forEach(function(q){for(var i=0;i<q[1];i++){var t=i/q[1]*6.283,x=16*Math.pow(Math.sin(t),3),y=-(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t));p.push([cx0+x*s*q[0],cy0+y*s*q[0]])}});return p}
+function setT(p){var n=form.length;form.forEach(function(f,i){var q=p[Math.floor(i*p.length/n)];f.tx=q[0];f.ty=q[1]})}
+
+function heart(n){for(var i=0;i<n;i++)(function(i){setTimeout(function(){var s=document.createElement('span');s.className='hf';s.textContent=['❤','💜','💖','✨'][Math.random()*4|0];s.style.left=Math.random()*94+'%';s.style.fontSize=(14+Math.random()*22)+'px';s.style.animationDuration=(6+Math.random()*5)+'s';$('hl').appendChild(s);setTimeout(function(){s.remove()},11500)},i*90)})(i)}
+setInterval(function(){if(sc>=2&&!document.hidden)heart(1)},2600);
+
+function burst(x,y,n){for(var i=0;i<n;i++){var a=Math.random()*6.283,v=1+Math.random()*3;sparks.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:cols[1+(Math.random()*3|0)]})}}
+
+var pls=[[.55,.9,5,'111,168,255'],[.8,.6,7,'255,143,199'],[1.05,.42,6,'182,156,255'],[1.3,.3,8,'255,200,120']];
+function drawSun(now,t){
+ var sx=W/2,sy=H*.4,u=Math.min(1,W/420),R=0;
+ if(t<300)return;
+ var pulse=1+.15*Math.sin(now/200);
+ if(t<1300){R=2*pulse}else{var q=Math.min(1,(t-1300)/2800);R=(2+q*q*(3-2*q)*(34*u+4))*(1+.04*Math.sin(now/300))}
+ var gr=cx.createRadialGradient(sx,sy,0,sx,sy,R*4.5);gr.addColorStop(0,'rgba(255,250,220,1)');gr.addColorStop(.25,'rgba(255,200,100,.7)');gr.addColorStop(1,'rgba(255,120,60,0)');
+ cx.fillStyle=gr;cx.beginPath();cx.arc(sx,sy,R*4.5,0,6.283);cx.fill();
+ cx.fillStyle='#fff6d6';cx.beginPath();cx.arc(sx,sy,R,0,6.283);cx.fill();
+ var p=Math.max(0,Math.min(1,(t-3200)/1600));
+ if(p>0)pls.forEach(function(o,i){var a=o[0]*150*u*p,ang=now*.0006*o[1]+i*1.7;
+  cx.strokeStyle='rgba(255,255,255,'+.12*p+')';cx.lineWidth=1;cx.beginPath();cx.ellipse(sx,sy,a,a*.45,0,0,6.283);cx.stroke();
+  var x=sx+Math.cos(ang)*a,y=sy+Math.sin(ang)*a*.45,rr=o[2]*u*(1+.25*Math.sin(ang));
+  var g2=cx.createRadialGradient(x,y,0,x,y,rr*3);g2.addColorStop(0,'rgba('+o[3]+',.9)');g2.addColorStop(1,'rgba('+o[3]+',0)');cx.fillStyle=g2;cx.beginPath();cx.arc(x,y,rr*3,0,6.283);cx.fill();
+  cx.fillStyle='rgb('+o[3]+')';cx.beginPath();cx.arc(x,y,rr,0,6.283);cx.fill()})}
+
+function drawGal(now){
+ if(ga<.01)return;
+ var gx=W/2,gy=sc===5?H*.32:H*.55,R=Math.min(W*.5,H*.34)*gs;rot+=.0006;
+ var g=cx.createRadialGradient(gx,gy,0,gx,gy,R*.5);g.addColorStop(0,'rgba(255,230,170,'+ga*.9+')');g.addColorStop(1,'rgba(160,90,255,0)');cx.fillStyle=g;cx.beginPath();cx.ellipse(gx,gy,R*.5,R*.28,0,0,6.283);cx.fill();
+ for(var b=0;b<3;b++){cx.fillStyle='rgba('+buckets[b]+','+ga*.85+')';cx.beginPath();
+  for(var i=0;i<gal.length;i++){var o=gal[i];if(o.b!==b)continue;var an=o.a+rot*(1.2-o.r),x=gx+Math.cos(an)*o.r*R+o.j*R,y=gy+Math.sin(an)*o.r*R*.5;cx.rect(x,y,1.7,1.7)}
+  cx.fill()}}
+
+function frame(now){
+ var t=now-tS;cx.clearRect(0,0,W,H);
+ warp+=(warpT-warp)*.04;ga+=(gaT-ga)*.03;gs+=(gsT-gs)*.025;bright+=(brT-bright)*.05;sunA+=((sc===2?1:0)-sunA)*.04;formA+=(formT-formA)*.04;
+ drawGal(now);
+ var mx=W/2,my=H/2;cx.lineWidth=1;
+ for(var i=0;i<stars.length;i++){var s=stars[i],on=Math.min(1,Math.max(0,(now-s.on-tOn)/700));if(on<=0)continue;
+  s.a+=.00005;if(warp>.02){s.f+=(.002+s.f*.05)*warp*s.z;if(s.f>1)s.f=Math.random()*.04}
+  var p0=s.f*maxR,x=mx+Math.cos(s.a)*p0,y=my+Math.sin(s.a)*p0,al=on*(.5+.5*Math.sin(now*s.sp+s.ph))*(1+bright*.9);if(al>1)al=1;
+  if(warp>.15){var p1=p0*(1-.12*warp);cx.strokeStyle='rgba('+s.c+','+al+')';cx.beginPath();cx.moveTo(x,y);cx.lineTo(mx+Math.cos(s.a)*p1,my+Math.sin(s.a)*p1);cx.stroke()}
+  else{var r=s.r*(1+bright*.8);cx.fillStyle='rgba('+s.c+','+al+')';cx.fillRect(x-r/2,y-r/2,r,r)}}
+ if(sunA>.01){cx.globalAlpha=sunA;drawSun(now,sc===2?t:99999);cx.globalAlpha=1}
+ if(formA>.01){cx.globalCompositeOperation='lighter';
+  for(i=0;i<form.length;i++){var f=form[i];f.x+=(f.tx-f.x)*.035;f.y+=(f.ty-f.y)*.035;var r2=f.s*(1+.35*Math.sin(now/260+f.ph));
+   cx.fillStyle='rgba(255,210,140,'+.16*formA+')';cx.beginPath();cx.arc(f.x,f.y,r2*3.2,0,6.283);cx.fill();
+   cx.fillStyle='rgba(255,246,225,'+.95*formA+')';cx.beginPath();cx.arc(f.x,f.y,r2,0,6.283);cx.fill()}
+  cx.globalCompositeOperation='source-over'}
+ for(i=sparks.length-1;i>=0;i--){var k=sparks[i];k.x+=k.vx;k.y+=k.vy;k.vx*=.985;k.vy*=.985;k.l-=.012;if(k.l<=0){sparks.splice(i,1);continue}cx.fillStyle='rgba('+k.c+','+k.l+')';cx.fillRect(k.x,k.y,2,2)}
+ requestAnimationFrame(frame)}
+var tOn=performance.now();
+requestAnimationFrame(frame);
+
+function show(n){for(var i=0;i<6;i++){var e=$('s'+i);if(e)e.classList.toggle('on',i===n)}}
+function flash(){var f=$('fl');f.style.opacity=.85;setTimeout(function(){f.style.opacity=0},500)}
+
+$('b0').onclick=function(){sc=1;show(-1);warpT=1;gaT=1;gsT=2.4;heart(10);
+ setTimeout(function(){flash();warpT=0;gaT=.28;gsT=1;sc=2;tS=performance.now();show(2);
+  setTimeout(function(){setT(txtPts());formT=1},5200);
+  setTimeout(function(){$('ti').classList.add('show');burst(W/2,H*.4,110);heart(8)},7000);
+  setTimeout(function(){$('b2').classList.add('show')},8600)},2800)};
+
+$('b2').onclick=function(){sc=3;show(3);formT=0;gaT=.18;typeIt()};
+var ti=0,tm=null;
+function typeIt(){var pn=$('pn');pn.textContent='';ti=0;(function step(){if(ti>=L.length){pn.textContent=L;$('b3').classList.add('show');return}ti++;pn.innerHTML=L.slice(0,ti).replace(/</g,'&lt;')+'<span class="cur"></span>';pn.scrollTop=pn.scrollHeight;var ch=L[ti-1];tm=setTimeout(step,/[.,?]/.test(ch)?190:/\n/.test(ch)?280:30)})()}
+$('pn').onclick=function(){clearTimeout(tm);ti=L.length;$('pn').textContent=L;$('b3').classList.add('show')};
+
+$('b3').onclick=function(){sc=4;show(4);gaT=.3};
+$('b4a').onclick=function(){this.classList.remove('show');brT=1;heart(40);setT(heartPts());formT=1;burst(W/2,H*.4,120);
+ setTimeout(function(){$('m4').classList.add('show')},3200);setTimeout(function(){$('b4b').classList.add('show')},5200)};
+addEventListener('pointerdown',function(e){if(sc===4)burst(e.clientX,e.clientY,24)});
+
+$('b4b').onclick=function(){sc=5;show(5);formT=0;brT=.3;gaT=1;gsT=1.25;heart(25)};
+})();
+</script>
+</body>
+</html>
